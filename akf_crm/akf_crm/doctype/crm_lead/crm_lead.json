@@ -1,0 +1,826 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-07-24 12:19:39.616298",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "email_append_to": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details",
+  "organization",
+  "website",
+  "territory",
+  "industry",
+  "job_title",
+  "source",
+  "lead_owner",
+  "person_tab",
+  "salutation",
+  "last_name",
+  "email",
+  "mobile_no",
+  "organization_tab",
+  "section_break_uixv",
+  "naming_series",
+  "middle_name",
+  "phone",
+  "column_break_dbsv",
+  "status",
+  "no_of_employees",
+  "annual_revenue",
+  "image",
+  "converted",
+  "sla_tab",
+  "sla",
+  "sla_creation",
+  "column_break_ffnp",
+  "sla_status",
+  "communication_status",
+  "response_details_section",
+  "response_by",
+  "column_break_pweh",
+  "first_response_time",
+  "first_responded_on",
+  "log_tab",
+  "status_change_log",
+  "student_applicant_tab",
+  "section_break_qljx",
+  "student_type",
+  "section_break_dwrj",
+  "lead_name",
+  "father_name",
+  "gender",
+  "current_location",
+  "country_of_residence",
+  "preferred_city",
+  "programs_in_city",
+  "first_name",
+  "column_break_jsku",
+  "mother_name",
+  "guardian_name",
+  "date_of_birth",
+  "nationality",
+  "other_nationality",
+  "dual_national",
+  "mention_second_nationality",
+  "marital_status",
+  "training_program_in_pakistan_section",
+  "current_program_of_study",
+  "enrolled_university",
+  "other_university",
+  "column_break_xypb",
+  "current_level_of_study",
+  "university_permission",
+  "section_break_nvnd",
+  "passport_number",
+  "column_break_otqq",
+  "passport_expiry_date",
+  "contact_information_section",
+  "phone_number",
+  "whatsapp_number",
+  "local_number",
+  "alternate_number",
+  "email_address",
+  "column_break_goxj",
+  "emergency_contact_phone",
+  "emergency_contact_name",
+  "section_break_ztpr",
+  "permanent_address",
+  "academic_information_section",
+  "currently_avalling",
+  "column_break_ulhb",
+  "mention_institute",
+  "section_break_vjmo",
+  "academic_information",
+  "section_break_rvbe",
+  "have_you_taken_test",
+  "column_break_llin",
+  "test_name",
+  "score",
+  "date_taken",
+  "program_details_section",
+  "intended_level_of_study",
+  "column_break_xzcu",
+  "institute",
+  "select_field_study_program",
+  "proposed_program_of_study",
+  "required_documents_section",
+  "passport",
+  "recent_passport_size_photograph",
+  "passport_page_with_gaza_exit",
+  "passport_page_with_egypt_entry",
+  "column_break_gsbi",
+  "academic_transcripts_certificates",
+  "last_degree",
+  "english_language_proficiency_certificate",
+  "any_additional_certificates",
+  "declaration_section",
+  "column_break_bzpa",
+  "small_text_jost",
+  "consent",
+  "date"
+ ],
+ "fields": [
+  {
+   "default": "CRM-LEAD-.YYYY.-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "CRM-LEAD-.YYYY.-"
+  },
+  {
+   "fieldname": "salutation",
+   "fieldtype": "Link",
+   "label": "Salutation",
+   "options": "Salutation"
+  },
+  {
+   "fieldname": "middle_name",
+   "fieldtype": "Data",
+   "label": "Middle Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "default": "New",
+   "fieldname": "status",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "CRM Lead Status",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "search_index": 1
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Website"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "Phone",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "section_break_uixv",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_dbsv",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "no_of_employees",
+   "fieldtype": "Select",
+   "label": "No. of Employees",
+   "options": "1-10\n11-50\n51-200\n201-500\n501-1000\n1000+"
+  },
+  {
+   "fieldname": "annual_revenue",
+   "fieldtype": "Currency",
+   "label": "Annual Revenue"
+  },
+  {
+   "fieldname": "lead_owner",
+   "fieldtype": "Link",
+   "label": "Lead Owner",
+   "options": "User"
+  },
+  {
+   "fieldname": "source",
+   "fieldtype": "Link",
+   "label": "Source",
+   "options": "CRM Lead Source"
+  },
+  {
+   "fieldname": "industry",
+   "fieldtype": "Link",
+   "label": "Industry",
+   "options": "CRM Industry"
+  },
+  {
+   "fieldname": "image",
+   "fieldtype": "Attach Image",
+   "hidden": 1,
+   "label": "Image",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "lead_name",
+   "fieldtype": "Data",
+   "label": "Full Name ",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "organization_tab",
+   "fieldtype": "Tab Break",
+   "label": "Others",
+   "read_only": 1
+  },
+  {
+   "fieldname": "organization",
+   "fieldtype": "Data",
+   "label": "Organization"
+  },
+  {
+   "default": "0",
+   "fieldname": "converted",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Converted"
+  },
+  {
+   "fieldname": "person_tab",
+   "fieldtype": "Tab Break",
+   "label": "Person"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Tab Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "sla_tab",
+   "fieldtype": "Tab Break",
+   "label": "SLA",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sla",
+   "fieldtype": "Link",
+   "label": "SLA",
+   "options": "CRM Service Level Agreement"
+  },
+  {
+   "fieldname": "sla_creation",
+   "fieldtype": "Datetime",
+   "label": "SLA Creation",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ffnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sla_status",
+   "fieldtype": "Select",
+   "label": "SLA Status",
+   "options": "\nFirst Response Due\nFailed\nFulfilled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "response_details_section",
+   "fieldtype": "Section Break",
+   "label": "Response Details"
+  },
+  {
+   "fieldname": "response_by",
+   "fieldtype": "Datetime",
+   "label": "Response By",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_pweh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "first_response_time",
+   "fieldtype": "Duration",
+   "label": "First Response Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "first_responded_on",
+   "fieldtype": "Datetime",
+   "label": "First Responded On",
+   "read_only": 1
+  },
+  {
+   "default": "Open",
+   "fieldname": "communication_status",
+   "fieldtype": "Link",
+   "label": "Communication Status",
+   "options": "CRM Communication Status"
+  },
+  {
+   "fieldname": "territory",
+   "fieldtype": "Link",
+   "label": "Territory",
+   "options": "CRM Territory"
+  },
+  {
+   "fieldname": "log_tab",
+   "fieldtype": "Tab Break",
+   "label": "Log",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status_change_log",
+   "fieldtype": "Table",
+   "label": "Status Change Log",
+   "options": "CRM Status Change Log"
+  },
+  {
+   "fieldname": "student_applicant_tab",
+   "fieldtype": "Tab Break",
+   "label": "Student Applicant"
+  },
+  {
+   "fieldname": "section_break_dwrj",
+   "fieldtype": "Section Break",
+   "label": "Student Details"
+  },
+  {
+   "fieldname": "email_address",
+   "fieldtype": "Data",
+   "label": "Email Address(Active)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "currently_avalling",
+   "fieldtype": "Select",
+   "label": "Currently availing any scholarship?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "father_name",
+   "fieldtype": "Data",
+   "label": "(Father / Husband) Name",
+   "reqd": 1
+  },
+  {
+   "description": "Click on arrow to select your country.",
+   "fieldname": "whatsapp_number",
+   "fieldtype": "Phone",
+   "label": "Whatsapp Number(Active)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "current_location",
+   "fieldtype": "Link",
+   "label": "Current Location",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_number",
+   "fieldtype": "Data",
+   "label": "Passport Number",
+   "reqd": 1
+  },
+  {
+   "default": "Riphah International University",
+   "fieldname": "institute",
+   "fieldtype": "Link",
+   "label": "Institute",
+   "options": "Institute"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth",
+   "reqd": 1
+  },
+  {
+   "fieldname": "guardian_name",
+   "fieldtype": "Data",
+   "label": "Guardian Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Select",
+   "label": "Nationality",
+   "options": "\nPalestinian Ghaza\nPalestinian West Bank\nEgyptian\nOther",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dual_national",
+   "fieldtype": "Select",
+   "label": "Are you dual nationality?",
+   "options": "\nYes\nNo\nNot Applicable"
+  },
+  {
+   "depends_on": "eval:doc.dual_national==\"Yes\";",
+   "fieldname": "mention_second_nationality",
+   "fieldtype": "Link",
+   "label": "Second Nationality",
+   "mandatory_depends_on": "eval:doc.dual_national==\"Yes\";",
+   "options": "Country"
+  },
+  {
+   "fieldname": "country_of_residence",
+   "fieldtype": "Link",
+   "label": "Country of Residence",
+   "options": "Country"
+  },
+  {
+   "fieldname": "passport_expiry_date",
+   "fieldtype": "Date",
+   "label": "Passport Expiry Date",
+   "reqd": 1
+  },
+  {
+   "description": "Click on arrow to select your country.",
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number (with country code)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_jsku",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "description": "Click on arrow to select your country.",
+   "fieldname": "emergency_contact_phone",
+   "fieldtype": "Phone",
+   "hidden": 1,
+   "label": "Emergency Contact Phone"
+  },
+  {
+   "fieldname": "permanent_address",
+   "fieldtype": "Small Text",
+   "label": "Permanent Address"
+  },
+  {
+   "depends_on": "eval:doc.have_you_taken_test==\"Yes\";",
+   "fieldname": "test_name",
+   "fieldtype": "Data",
+   "label": "Test Name",
+   "mandatory_depends_on": "eval:doc.have_you_taken_test==\"Yes\";"
+  },
+  {
+   "depends_on": "eval:doc.have_you_taken_test==\"Yes\";",
+   "fieldname": "score",
+   "fieldtype": "Data",
+   "label": "Score",
+   "mandatory_depends_on": "eval:doc.have_you_taken_test==\"Yes\";"
+  },
+  {
+   "depends_on": "eval:doc.have_you_taken_test==\"Yes\";",
+   "fieldname": "date_taken",
+   "fieldtype": "Date",
+   "label": "Date Taken",
+   "mandatory_depends_on": "eval:doc.have_you_taken_test==\"Yes\";"
+  },
+  {
+   "fieldname": "program_details_section",
+   "fieldtype": "Section Break",
+   "label": " Program Details"
+  },
+  {
+   "fieldname": "intended_level_of_study",
+   "fieldtype": "Select",
+   "label": "Intended Level of Study",
+   "options": "\nBachelors\nMasters\nPhD\nDiploma"
+  },
+  {
+   "fieldname": "column_break_xzcu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proposed_program_of_study",
+   "fieldtype": "Link",
+   "label": "Proposed Program of Study",
+   "options": "Program"
+  },
+  {
+   "description": "(Please attach scanned copies of the following documents)\n",
+   "fieldname": "required_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Required Documents"
+  },
+  {
+   "fieldname": "passport",
+   "fieldtype": "Attach",
+   "label": "Passport (first page & visa if already)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_gsbi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_transcripts_certificates",
+   "fieldtype": "Attach",
+   "label": "Academic Transcripts / Certificates",
+   "reqd": 1
+  },
+  {
+   "fieldname": "english_language_proficiency_certificate",
+   "fieldtype": "Attach",
+   "label": "English Language Proficiency Certificate (IELTS/TOEFL/Equivalent if taken)"
+  },
+  {
+   "fieldname": "recent_passport_size_photograph",
+   "fieldtype": "Attach",
+   "label": "Recent Passport Size Photograph",
+   "reqd": 1
+  },
+  {
+   "fieldname": "any_additional_certificates",
+   "fieldtype": "Attach",
+   "label": "Any additional certificates or documents supporting your application"
+  },
+  {
+   "fieldname": "declaration_section",
+   "fieldtype": "Section Break",
+   "label": "Declaration"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_information_section",
+   "fieldtype": "Section Break",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "column_break_goxj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "academic_information_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_ulhb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "have_you_taken_test",
+   "fieldtype": "Select",
+   "label": "Have you taken any standardized test?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "bold": 1,
+   "fieldname": "column_break_bzpa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "consent",
+   "fieldtype": "Check",
+   "label": "Acknowledge"
+  },
+  {
+   "fieldname": "section_break_nvnd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_otqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ztpr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "section_break_rvbe",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_llin",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "I hereby declare that all the information provided in this form is accurate and complete to \nthe best of my knowledge. I understand that misrepresentation or omission of facts may \nresult in the rejection of my application or dismissal from the university.\n",
+   "fieldname": "small_text_jost",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "section_break_vjmo",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "academic_information",
+   "fieldtype": "Table",
+   "label": "Academic Information",
+   "options": "Academic Records",
+   "reqd": 1
+  },
+  {
+   "depends_on": "eval: doc.currently_avalling==\"Yes\";",
+   "fieldname": "mention_institute",
+   "fieldtype": "Data",
+   "label": "Mention Institute"
+  },
+  {
+   "fieldname": "select_field_study_program",
+   "fieldtype": "Select",
+   "label": "Proposed Program of Study",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mother_name",
+   "fieldtype": "Data",
+   "label": "Mother Name",
+   "reqd": 1
+  },
+  {
+   "description": "Click on arrow to select your country.",
+   "fieldname": "local_number",
+   "fieldtype": "Phone",
+   "hidden": 1,
+   "label": "Local Number"
+  },
+  {
+   "fieldname": "passport_page_with_gaza_exit",
+   "fieldtype": "Attach",
+   "label": "Passport Page with Gaza Exit"
+  },
+  {
+   "fieldname": "passport_page_with_egypt_entry",
+   "fieldtype": "Attach",
+   "label": "Passport Page with Egypt entry"
+  },
+  {
+   "fieldname": "last_degree",
+   "fieldtype": "Attach",
+   "label": "Last Degree",
+   "reqd": 1
+  },
+  {
+   "description": "Click on arrow to select your country.",
+   "fieldname": "alternate_number",
+   "fieldtype": "Phone",
+   "label": "Alternate Number"
+  },
+  {
+   "default": "Islamabad",
+   "fieldname": "preferred_city",
+   "fieldtype": "Link",
+   "label": "Preferred City",
+   "options": "City"
+  },
+  {
+   "fieldname": "programs_in_city",
+   "fieldtype": "Link",
+   "label": "Programs in city",
+   "options": "Program"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "Full Name (as per passport)"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed\nSeparated\nEngaged\nOther"
+  },
+  {
+   "depends_on": "eval:doc.nationality=='Other';\n",
+   "fieldname": "other_nationality",
+   "fieldtype": "Data",
+   "label": "Other Nationality"
+  },
+  {
+   "fieldname": "training_program_in_pakistan_section",
+   "fieldtype": "Section Break",
+   "label": "Training Program in Pakistan"
+  },
+  {
+   "fieldname": "column_break_xypb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "depends_on": "eval:doc.enrolled_university =='Others';\n",
+   "fieldname": "other_university",
+   "fieldtype": "Data",
+   "label": "Other University"
+  },
+  {
+   "fieldname": "current_program_of_study",
+   "fieldtype": "Select",
+   "label": "Which is your current program of study?",
+   "options": "\nMedical\nDental\nPharmacy\nNursing"
+  },
+  {
+   "fieldname": "enrolled_university",
+   "fieldtype": "Select",
+   "label": "Which university are you currently enrolled in",
+   "options": "\nAl Azhar University Gaza\nIslamic University Gaza University of Palestine\nOthers"
+  },
+  {
+   "fieldname": "current_level_of_study",
+   "fieldtype": "Select",
+   "label": "What is your current level of study?: ",
+   "options": "\n4th Year\n5th Year\n6th Year"
+  },
+  {
+   "fieldname": "university_permission",
+   "fieldtype": "Select",
+   "label": "Do you have permission from your university to complete training in Pakistan?",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "section_break_qljx",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student_type",
+   "fieldtype": "Select",
+   "label": "Student Type",
+   "options": "\nMedical\nNon Medical",
+   "read_only": 1
+  }
+ ],
+ "image_field": "image",
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-25 12:21:44.329397",
+ "modified_by": "Administrator",
+ "module": "Akf Crm",
+ "name": "CRM Lead",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sender_field": "email",
+ "sender_name_field": "first_name",
+ "show_title_field_in_link": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "lead_name",
+ "track_changes": 1
+}

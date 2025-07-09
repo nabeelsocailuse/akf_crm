@@ -1,0 +1,71 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2025-04-24 13:23:59.332624",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "latest_qualification_achieved",
+  "name_of_institution",
+  "country",
+  "year_of_graduation",
+  "cgpa__percentage",
+  "medium_of_instruction"
+ ],
+ "fields": [
+  {
+   "fieldname": "latest_qualification_achieved",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Latest Qualification Achieved"
+  },
+  {
+   "fieldname": "name_of_institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Institution"
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "Country"
+  },
+  {
+   "fieldname": "year_of_graduation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year of Graduation"
+  },
+  {
+   "fieldname": "cgpa__percentage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CGPA / Percentage"
+  },
+  {
+   "fieldname": "medium_of_instruction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medium of Instruction"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-24 16:47:29.871661",
+ "modified_by": "Administrator",
+ "module": "Akf Crm",
+ "name": "Academic Information",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

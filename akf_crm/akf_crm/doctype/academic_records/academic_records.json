@@ -1,0 +1,85 @@
+{
+ "actions": [],
+ "autoname": "hash",
+ "creation": "2025-04-24 18:55:16.057211",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "education_level",
+  "degree_name",
+  "name_of_institution",
+  "country",
+  "year_of_graduation",
+  "cgpa__percentage",
+  "medium_of_instruction"
+ ],
+ "fields": [
+  {
+   "fieldname": "name_of_institution",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Institution",
+   "reqd": 1
+  },
+  {
+   "fieldname": "country",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Country",
+   "options": "\n\u00c5land Islands\nZimbabwe\nZambia\nYemen\nWestern Sahara\nWallis and Futuna\nVirgin Islands, U.S.\nVirgin Islands, British\nVietnam\nVenezuela, Bolivarian Republic of\nVanuatu\nUzbekistan\nUruguay\nUnited States Minor Outlying Islands\nUnited States\nUnited Kingdom\nUnited Arab Emirates\nUkraine\nUganda\nTuvalu\nTurks and Caicos Islands\nTurkmenistan\nTurkey\nTunisia\nTrinidad and Tobago\nTonga\nTokelau\nTogo\nTimor-Leste\nThailand\nTanzania\nTajikistan\nTaiwan\nSyria\nSwitzerland\nSweden\nSwaziland\nSvalbard and Jan Mayen\nSuriname\nSudan\nSri Lanka\nSpain\nSouth Sudan\nSouth Georgia and the South Sandwich Islands\nSouth Africa\nSomalia\nSolomon Islands\nSlovenia\nSlovakia\nSint Maarten (Dutch part)\nSingapore\nSierra Leone\nSeychelles\nSerbia\nSenegal\nSaudi Arabia\nSao Tome and Principe\nSan Marino\nSamoa\nSaint Vincent and the Grenadines\nSaint Pierre and Miquelon\nSaint Martin (French part)\nSaint Lucia\nSaint Kitts and Nevis\nSaint Helena, Ascension and Tristan da Cunha\nSaint Barth\u00e9lemy\nR\u00e9union\nRwanda\nRussian Federation\nRomania\nQatar\nPuerto Rico\nPortugal\nPoland\nPitcairn\nPhilippines\nPeru\nParaguay\nPapua New Guinea\nPanama\nPalestinian Territory, Occupied\nPalau\nPakistan\nOman\nNorway\nNorthern Mariana Islands\nNorfolk Island\nNiue\nNigeria\nNiger\nNicaragua\nNew Zealand\nNew Caledonia\nNetherlands\nNepal\nNauru\nNamibia\nMyanmar\nMozambique\nMorocco\nMontserrat\nMontenegro\nMongolia\nMonaco\nMoldova, Republic of\nMicronesia, Federated States of\nMexico\nMayotte\nMauritius\nMauritania\nMartinique\nMarshall Islands\nMalta\nMali\nMaldives\nMalaysia\nMalawi\nMadagascar\nMacedonia\nMacao\nLuxembourg\nLithuania\nLiechtenstein\nLibya\nLiberia\nLesotho\nLebanon\nLatvia\nLao Peoples Democratic Republic\nKyrgyzstan\nKuwait\nKorea, Republic of\nKorea, Democratic Peoples Republic of\nKiribati\nKenya\nKazakhstan\nJordan\nJersey\nJapan\nJamaica\nIvory Coast\nItaly\nIsrael\nIsle of Man\nIreland\nIraq\nIran\nIndonesia\nIndia\nIceland\nHungary\nHong Kong\nHonduras\nHoly See (Vatican City State)\nHeard Island and McDonald Islands\nHaiti\nGuyana\nGuinea-Bissau\nGuinea\nGuernsey\nGuatemala\nGuam\nGuadeloupe\nGrenada\nGreenland\nGreece\nGibraltar\nGhana\nGermany\nGeorgia\nGambia\nGabon\nFrench Southern Territories\nFrench Polynesia\nFrench Guiana\nFrance\nFinland\nFiji\nFaroe Islands\nFalkland Islands (Malvinas)\nEthiopia\nEstonia\nEritrea\nEquatorial Guinea\nEl Salvador\nEgypt\nEcuador\nDominican Republic\nDominica\nDjibouti\nDenmark\nCzech Republic\nCyprus\nCura\u00e7ao\nCuba\nCroatia\nCosta Rica\nCook Islands\nCongo, The Democratic Republic of the\nCongo\nComoros\nColombia\nCocos (Keeling) Islands\nChristmas Island\nChina\nChile\nChad\nCentral African Republic\nCayman Islands\nCape Verde\nCanada\nCameroon\nCambodia\nBurundi\nBurkina Faso\nBulgaria\nBrunei Darussalam\nBritish Indian Ocean Territory\nBrazil\nBouvet Island\nBotswana\nBosnia and Herzegovina\nBonaire, Sint Eustatius and Saba\nBolivia, Plurinational State of\nBhutan\nBermuda\nBenin\nBelize\nBelgium\nBelarus\nBarbados\nBangladesh\nBahrain\nBahamas\nAzerbaijan\nAustria\nAustralia\nAruba\nArmenia\nArgentina\nAntigua and Barbuda\nAntarctica\nAnguilla\nAngola\nAndorra\nAmerican Samoa\nAlgeria\nAlbania\nAfghanistan",
+   "reqd": 1
+  },
+  {
+   "fieldname": "year_of_graduation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Year of Graduation",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cgpa__percentage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CGPA / Percentage",
+   "reqd": 1
+  },
+  {
+   "fieldname": "medium_of_instruction",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Medium of Instruction",
+   "reqd": 1
+  },
+  {
+   "fieldname": "education_level",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Education Level",
+   "options": "\nGeneral Secondary Education Certificate\nBachelors\nMasters\nPhD",
+   "reqd": 1
+  },
+  {
+   "fieldname": "degree_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Degree Name",
+   "reqd": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-25 12:22:15.695490",
+ "modified_by": "Administrator",
+ "module": "Akf Crm",
+ "name": "Academic Records",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
